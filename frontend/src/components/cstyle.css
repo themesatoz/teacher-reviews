@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta&display=swap");
+
+/* Navbar Style Starts header */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+  flex-wrap: nowrap !important;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color:white;
+}
+
+.abc {
+  align-items: center;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding: 14px 80px;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.mnb {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  flex: 1 1;
+  color: white;
+  margin: 0px;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Allerta", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.right-icons {
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
+  gap: 20px;
+  padding-left: 40px;
+  gap: 20px;
+  padding-left: 40px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.download-button {
+  align-items: center;
+  background-color: #292929;
+  border-radius: 32px;
+  color: #fff;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 14px 24px;
+  text-decoration: none;
+  margin-left: 200px;
+}
+
+.icons {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+  align-content: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap !important;
+  }
+  .abc {
+    padding: 15px 20px;
+    height: 65px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .mnb {
+    position: relative;
+    width: 100%;
+  }
+
+  .menu {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: absolute;
+    top: 22px;
+    left: -125%;
+    background-color: black;
+    transition: left 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .menu.open {
+    left: 0;
+  }
+
+  .right-icons {
+    display: none;
+  }
+
+  .navbar.menu-open {
+    /* position: fixed; */
+  }
+
+  .download-button {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:1220px) and (min-width:769px){
+    .navbar .container{
+        max-width:95%;
+    }
+    .menu{
+        display: flex;
+        gap:20px;
+    }
+    .menu li a{
+        font-size: 15px;
+    }
+    .right-icons{
+        display: none;
+    }
+
+    .download-button{
+        margin-left: 30px;
+    }
+}
+
+/* Navbar Style Ends Here */
+
+
+
+/* Footer Section Style Starts Here */
+
+.ftr{
+    background-color: #000;
+    text-align: left;
+    padding: 112px 30px 64px;
+    border-bottom: 1px solid #333;;
+  }
+  
+  
+  .ftr .icons{
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .ftr .icon{
+    width: 40px;
+  }
+  
+  .ics{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .ftrbtm{
+    padding:40px;
+    background-color: #000;
+  }
+  
+  .ftbtlnk{
+    color:white;
+    display: inline-flex;
+  }
+  
+  .btlks{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btics{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  @media screen and (max-width:768px){
+    .ics{
+      padding-top: 20px;
+    }
+  
+    .ftrbtm{
+      padding-top: 0px;
+    }
+  
+    .btics{
+      justify-content: center;
+    }
+  }
+  /* Footer Section Style Ends Here */
