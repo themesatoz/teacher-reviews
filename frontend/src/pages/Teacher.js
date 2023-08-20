@@ -6,10 +6,9 @@ import teachersData from './teachersData'; // Import your teacher data
 const TeacherProfile = () => {
   const { teacherId } = useParams(); // Get the teacherId from URL
   
-  const { teachers, loading, error } = teachersData();
 
   // Find the selected teacher based on the teacherId
-  const selectedTeacher = teachers.find((teacher) => teacher.id === parseInt(teacherId));
+  const selectedTeacher = teachersData.find((teacher) => teacher.id === parseInt(teacherId));
   console.log("Selected Teacher is: ", selectedTeacher.name);
 
   // State for rating form

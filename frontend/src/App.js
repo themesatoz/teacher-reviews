@@ -17,8 +17,8 @@ function App() {
           <Route exact path="/" element={<Home />}/>
           {/* <Route path="/teacher" element={<Teacher />}></Route> */}
           <Route path="/search" element={<SearchPage />}/>
-          <Route path="/teacher/:teacherId" component={<TeacherProfile />}/>
-          <Route path="/register" component={<LoginSignupPage />}/>
+          <Route path="/teacher/:teacherId" element={<TeacherProfile />}/>
+          <Route path="/register" element={<LoginSignupPage />}/>
           {/* <Route path="/contact" element={<Contact />}></Route> */}
         </Routes>
         <Footer />
