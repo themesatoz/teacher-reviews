@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import './style.css';
 
 const Feature=({title, desc})=>{
     return(
@@ -13,7 +14,7 @@ const Feature=({title, desc})=>{
 const Home = () => {
   return (
     <div className="home">
-      <header className="hero text-center py-5" style={{ background: '#343a40', color: 'white' }}>
+      <header className="hero text-center" style={{ background: '#343a40', color: 'white' }}>
         <h1>Welcome to EduRator</h1>
         <p className="lead">Empowering students to share their educational insights.</p>
       </header>

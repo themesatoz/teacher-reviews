@@ -1,0 +1,75 @@
+.hero {
+    padding-top: 10rem!important;
+    padding-bottom: 10rem!important;
+}
+
+.profile{
+    height: 40vh;
+    margin: -16px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.profile img{
+    width: 250px;
+    padding:25px;
+}
+
+.car-dbody{
+    padding: 40px;
+}
+
+.card-img, .card-img-top{
+    width: 40% !important;
+    margin: auto;
+    padding: 20px;
+}
+
+.crds img{
+    width: 100%;
+}
+
+.crds{
+    padding:10px;
+    border: 1px solid #0000002d;
+}
+
+
+/* SearchBarComponent.css */
+
+/* Container for the search bar and button */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Styles for the search input */
+  .search-container .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the search button */
+  .search-container .search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the search button */
+  .search-container .search-button:hover {
+    background-color: #0056b3;
+  }
+  

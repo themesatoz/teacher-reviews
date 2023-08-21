@@ -9,6 +9,7 @@ import {
   FaYoutube,
   FaProductHunt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 // import SVGComponent from "../assets/logo";
 // import ftrimg from "../assets/ftrr.svg";
 
@@ -20,7 +21,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-8 logo">
             {/* <SVGComponent /> */}
-            <h2>EduRater</h2>
+            <h2><Link to="/">EduRater</Link></h2>
           </div>
           <div className="col-md-4 ics">
             <a href="/" className="icons">

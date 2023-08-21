@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className={`navbar ${isMenuOpen ? "menu-open" : ""}`}>
       <div className="container abc">
         <div className="logo">
-            <h2>EduRater</h2>
+            <h2><Link to="/">EduRater</Link></h2>
         </div>
         <div
           className={`menu-icon ${isMenuOpen ? "open" : ""}`}
@@ -40,7 +40,7 @@ const Navbar = () => {
               <Link to="/faq">FAQ</Link>
             </li>
             <Link to="/register" className="download-button">
-              Download
+              Register
             </Link>
           </ul>
           <div className={`right-icons ${isMenuOpen ? "open" : ""}`}>
